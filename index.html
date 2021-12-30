@@ -38,17 +38,20 @@
 						<li><a target="_blank" href="http://www.a-hospital.com/w/%e4%b8%ad%e5%8c%bb%e5%9f%ba%e7%a1%80%e7%90%86%e8%ae%ba">《中医基础理论》完整版电子书 - A+医学百科</a></li>
 						<li>
 							<div>
-								<span>汤药煎法</span>
+								<span style="display : inline-block; border : 1px solid black; width : 14px; text-align : center;">+</span><span>汤药煎法</span>
 								<div style="display:none;">
 									<script>
 										{
 											const cs = document.currentScript;
 											const pn = cs.parentNode;
-											pn.parentNode.addEventListener('click', function(e) {
+											const ppn = pn.parentNode;
+											ppn.addEventListener('click', function(e) {
 												let display = pn.style.getPropertyValue('display');
 												if (display) {
+													ppn.children[0].textContent = '-';
 													pn.style.removeProperty('display');
 												} else {
+													ppn.children[0].textContent = '+';
 													pn.style.setProperty('display', 'none');
 												}
 											});
