@@ -16,6 +16,21 @@
 			}
 		</style>
 		<script>
+			const add_fold = function(currentScript) {
+				const cs = currentScript;
+				const pn = cs.parentNode;
+				const ppn = pn.parentNode;
+				ppn.children[0].addEventListener('click', function(e) {
+					let display = pn.style.getPropertyValue('display');
+					if (display) {
+						ppn.children[0].textContent = '-';
+						pn.style.removeProperty('display');
+					} else {
+						ppn.children[0].textContent = '+';
+						pn.style.setProperty('display', 'none');
+					}
+				});
+			}
 		</script>
 	</head>
 	<body>
@@ -41,24 +56,8 @@
 							<div>
 								<span style="display : inline-block; border : 1px solid black; width : 14px; text-align : center;">+</span><span>汤药煎法(平心堂)</span>
 								<div style="display:none;">
-									<script>
-										{
-											const cs = document.currentScript;
-											const pn = cs.parentNode;
-											const ppn = pn.parentNode;
-											ppn.addEventListener('click', function(e) {
-												let display = pn.style.getPropertyValue('display');
-												if (display) {
-													ppn.children[0].textContent = '-';
-													pn.style.removeProperty('display');
-												} else {
-													ppn.children[0].textContent = '+';
-													pn.style.setProperty('display', 'none');
-												}
-											});
-										}
-									</script>
 									<div>
+										<script>add_fold(document.currentScript);</script>
 										1.煎药最好用砂锅、砂壶或搪瓷锅，禁用带油垢的锅(炒菜锅)或铁锅。<br/>
 										2.煎药前加冷水浸泡半小时，水要清洁，药随水浮起可搅拌，水要高于药品2至5厘米。<br/>
 										3.一般中药煎2次，头煎应水沸后文火再煎30分钟左右，二煎应水沸后再煎20分钟左右。煎药要用文火，避免熬干了但药的成分成分尚未有效析出影响效果。<br/>
@@ -81,23 +80,7 @@
 							<div>
 								<span style="display : inline-block; border : 1px solid black; width : 14px; text-align : center;">+</span><span>汤药煎法(同仁堂)</span>
 								<div style="display:none;">
-									<script>
-										{
-											const cs = document.currentScript;
-											const pn = cs.parentNode;
-											const ppn = pn.parentNode;
-											ppn.addEventListener('click', function(e) {
-												let display = pn.style.getPropertyValue('display');
-												if (display) {
-													ppn.children[0].textContent = '-';
-													pn.style.removeProperty('display');
-												} else {
-													ppn.children[0].textContent = '+';
-													pn.style.setProperty('display', 'none');
-												}
-											});
-										}
-									</script>
+									<script>add_fold(document.currentScript);</script>
 									<div class="class___code">
 										1.煎药应用砂锅、砂壶、搪瓷锅。<br/>
 										2.煎药前须用凉水浸泡半小时至1小时，水面高出药物2至3厘米。<br/>
@@ -109,6 +92,63 @@
 								</div>
 							</div>
 						</li>
+						<div>
+							<span style="display : inline-block; border : 1px solid black; width : 14px; text-align : center;">+</span><span>五禽戏与五脏关系</span>
+							<div style="display:none;">
+								<script>add_fold(document.currentScript);</script>
+								<div class="class___code">
+									五禽戏与五脏关系<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>五行：&nbsp;木&nbsp;火&nbsp;土&nbsp;金&nbsp;水<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>五禽：&nbsp;鹿&nbsp;猿&nbsp;熊&nbsp;鹤&nbsp;虎<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>五脏：&nbsp;肝&nbsp;心&nbsp;脾&nbsp;肺&nbsp;肾<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>虎走阴属肾，行膀胱属阳，阴阳平衡防治疾病，练虎戏的时候，瞪起眼睛来加强肾脏的锻炼。<br/>
+									<span class="class___tab">&#9;</span>鹿主肝，肝脏有毛病，它很起作用。鹿的眼睛，它的目光是斜视，斜视就像偷着看人，鹿是斜视，斜视作用于肝脏，叫疏通肝气，调理肺气，互相配合，互相起作用。<br/>
+									<span class="class___tab">&#9;</span>熊属土，主脾胃，特别是练摇臂熊，晃臂熊的时候，胃酸，胃痛胃溃疡，十二指肠溃疡，胃上有毛病，就练熊（的动作），它很起作用。<br/>
+									<span class="class___tab">&#9;</span>猿属火。心火猿主心脏，对心神起作用，猿的动作闪展腾挪灵活眼，这个动式，一活动起来以后，这个眼睛眨巴三下，不要多，你把这个神气掌握到了，就三下解决问题。<br/>
+									<span class="class___tab">&#9;</span>鹤它的眼神，目光是环视。鸟的眼珠是环视，动起来，环视，这种环视它的作用在什么地方呢，作用在肺，它配合动作的时候，比如说做平飞鹤，一抬，五脏六腑都起来，一落，杀下去，都恢复回去，这一张一弛，一开一合，内脏特别是肺起作用了。&nbsp;<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>所以在全身各个关节，各个部位都活动了，他有一句话，我记得讲，360个关骨节，84000个毛细孔，在你活动起来以后，它都起到作用。<br/>
+									<br/>
+									五禽戏定式动作<br/>
+									<br/>
+									第一式　虎举<br/>
+									<br/>
+									第二式　虎扑<br/>
+									<br/>
+									第三式　鹿抵<br/>
+									<br/>
+									第四式　鹿奔<br/>
+									<br/>
+									第五式　熊运<br/>
+									<br/>
+									第六式　熊晃<br/>
+									<br/>
+									第七式　猿提<br/>
+									<br/>
+									第八式　猿摘<br/>
+									<br/>
+									第九式　鸟伸<br/>
+									<br/>
+									第十式　鸟飞<br/>
+									<br/>
+									《养性延命录》“五禽戏”<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>1、虎戏：“虎戏者，四肢距地，前三掷，却三掷，长引腰，侧脚，仰天即返，距行，前、却各七过也。”即：手足着地，身躯前纵后退3次，然后引腰、昂头，如虎行步，前进、后退7步。<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>2、鹿戏：“鹿戏者，四肢距地，引项返顾，左三右二，伸左右脚，伸缩亦三亦二也。”即：手足着地，回头顾盼2～3次，然后左脚右伸，右脚左伸2～3次。<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>3、熊戏：“熊戏者，正仰，以两手抱膝下，举头，左辟地七，右亦七、蹲地，以手左右托地。”即：仰卧，两手抱膝，抬头，躯体向左、右倾侧着地各7次，然后蹲起，双手左右按地。<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>4、猿戏：“猿戏者，攀物自悬，伸缩身体，上下一七，以脚拘物自悬，左右七，手钩却立，按头各七。”即，双手攀物悬空，伸缩躯体7次，或以下肢钩住物体使身体倒悬。然后手钩物体作引体向上7次。<br/>
+									<br/>
+									<span class="class___tab">&#9;</span>5、鸟戏：“鸟戏者，双立手，翘一足，伸两臂，扬眉用力，各二七，坐伸脚，手挽足趾各七，缩伸二臂各七也。”即：一足立地，两臂张开作鸟飞状。然后取坐位，下肢伸直，弯腰用手摸足趾，再屈伸两臂各7次。<br/>
+								</div>
+							</div>
+						</div>
 						<span>长的像插了个烤肠的植物</span>
 						<li><a target="_blank" href="https://baike.baidu.com/item/%E9%A6%99%E8%92%B2/63572">香蒲</a></li>
 						<li><a target="_blank" href="http://www.100md.com/html/dir0/16/41/86.htm">蒲黄(中草药详解)</a></li>
